@@ -436,7 +436,7 @@ RCT_EXPORT_METHOD(isCallActive:(NSString *)uuidString)
     int _handleType = [RNCallKeep getHandleType:handleType];
     NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:uuidString];
     CXCallUpdate *callUpdate = [[CXCallUpdate alloc] init];
-    callUpdate.remoteHandle = [[CXHandle alloc] initWithType:_handleType value:handle];
+    // callUpdate.remoteHandle = [[CXHandle alloc] initWithType:_handleType value:handle];
     callUpdate.supportsHolding = supportsHolding;
     callUpdate.supportsDTMF = supportsDTMF;
     callUpdate.supportsGrouping = supportsGrouping;
