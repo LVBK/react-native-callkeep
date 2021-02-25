@@ -545,7 +545,7 @@ RCT_EXPORT_METHOD(isCallActive:(NSString *)uuidString)
     AVAudioSession* audioSession = [AVAudioSession sharedInstance];
     [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord withOptions:AVAudioSessionCategoryOptionAllowBluetooth error:nil];
 
-    [audioSession setMode:AVAudioSessionModeVoiceChat error:nil];
+    [audioSession setMode:AVAudioSessionModeVideoChat error:nil];
 
     double sampleRate = 44100.0;
     [audioSession setPreferredSampleRate:sampleRate error:nil];
